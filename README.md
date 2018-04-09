@@ -16,3 +16,6 @@ Practicing scope
 * 'favFruit' was logged because the variable name exist inside the global scope.
 * when 'let favFruit' was moved inside of the printFruit function it was no longer in the global scope and therefore no longer visable to the printFavFruit function.
 * When the printFavFruit function was moved inside of the frintFruit function it regained the scope where favFruit was defined. calling the printFavFruit function can only be done inside of the print fruit function.
+* creating a let leastFav outside of the function and calling for the console.log inside of the function will return 'undefined' since leastFav is outside of the scope.
+* calling the hello() function before the function is defined will still work.
+* calling a function before a let defined function will not work since once hoisted the function will not be moved (due to 'let'). the function will have to be called after the 'let' declaration.
